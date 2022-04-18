@@ -151,7 +151,7 @@ img:hover{-webkit-filter: grayscale(0%);
 
 /*Make the h2 heading match h1*/
 h2{
-	font-size: 2em; 
+	font-size: 13vw; 
 	font-weight: bold;
 	font-family: 'Caveat', cursive;
 }
@@ -160,6 +160,10 @@ h2{
 p, h1, h2 {
     padding: 10px;
 	margin: 10px 0px;
+}
+
+p{
+	font-size:5vw;
 }
 
 /*Add borders around the main components and some
@@ -300,6 +304,8 @@ a:hover{
 	  animation: none;
 	  -webkit-filter: none;
       filter: none;
+	  transition: none;
+	  transform: none;
   }
 
 
@@ -446,6 +452,15 @@ input[type=text], select, textarea {
 
 @media only screen and (min-width: 800px) {
 
+	h2{
+
+		font-size: 10vw;
+	}
+
+	p{
+		font-size: 3vw;
+	}
+
 	.img-container img{
 		flex:50%;
 		max-width: 40%;
@@ -513,6 +528,15 @@ input[type=text], select, textarea {
 }
 
 @media only screen and (min-width: 1200px) {
+
+	h2{
+
+		font-size: 8vw;
+	}
+
+	p{
+		font-size: 1.5vw;
+	}
 
 	.img-container img{
 		flex:25%;
