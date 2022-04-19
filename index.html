@@ -26,6 +26,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<script src="js/clock.js"></script>
 	
 	<script src="https://kit.fontawesome.com/a62d08b717.js" crossorigin="anonymous"></script>
 	
@@ -71,25 +75,34 @@
 		</nav> -->
 		<nav class="navbar navbar-inverse navbar-expand-sm navbar-expand-lg  navbar-expand-md" role="navigation">
 			<div class="container-fluid"> 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#example-navbar-collapse">
-					
-					<span class="icon-bar sr-only" >James Wan</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- <a class="navbar-brand" href="#"><br>James Wan</br></a> -->
-			</div>
-		<div class="collapse navbar-collapse" id="example-navbar-collapse">
-		<ul class="nav nav-tabs nav-justified">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						
+						<span class="icon-bar sr-only" >James Wan</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#" aria-label="first link">
+							
+
+
+						</a>
+					</div>
+				</div>
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav nav-tabs nav-justified">
+
+			
 			
 			<li class="active  dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="index.html">
 				  Home <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu nav nav-pills nav-stacked">
+					<li><a href="index.html">Top</a></li>
 				  <li><a href="index.html#bio">Biography</a></li>
 				  <li><a href="index.html#movie_list">Movie List</a></li>
 				  <li><a href="index.html#contact_table">Contact Table</a></li>
@@ -101,6 +114,7 @@
 					Dead Silence <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu nav nav-pills nav-stacked">
+					<li><a href="deadsilence.html">Top</a></li>
 					<li><a href="deadsilence.html#rate">Rate</a></li>
 					<li><a href="deadsilence.html#trailer">Trailer</a></li>
 					<li><a href="deadsilence.html#synopsis">Synpsis</a></li>
@@ -115,6 +129,7 @@
 						Insidious Series <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu nav nav-pills nav-stacked">
+						<li><a href="insidious.html">Top</a></li>
 						<li><a href="insidious.html#rate">Rate</a></li>
 						<li><a href="insidious.htmll#trailer">Trailer</a></li>
 						<li><a href="insidious.html#synopsis">Synpsis</a></li>
@@ -129,6 +144,7 @@
 						Conjuring <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu nav nav-pills nav-stacked">
+						<li><a href="conjuring.html">Top</a></li>
 						<li><a href="conjuring.html#rate">Rate</a></li>
 						<li><a href="conjuring.html#trailer">Trailer</a></li>
 						<li><a href="conjuring.html#synopsis">Synpsis</a></li>
@@ -144,6 +160,7 @@
 		</div>
 	</div>
 	</nav>
+	<br>
 	
 		<!-- The h1 is a semantic tag that aids accessibility -->
 		<h1>James Wan </h1>
@@ -165,6 +182,7 @@
 
 	<!-- Every page should have a main tag for accessibility -->
 	<main id="maincontent">
+		<div class="index_intro">
 		<div class="index_flex_container">
 
 			<div class="caption">
@@ -173,12 +191,12 @@
 
 			<div class="flip-card" >
 				<div class="flip-card-inner">
-					<a href="#" id="flip-card-inner"></a>
+					<a href="#" id="flip-card-inner" aria-label="second link"></a>
 				  <div class="flip-card-front">
 					<img src="images/flip.png"  class="img-responsive" alt="flip-card" style="width:250px;height:250px;" id="flip_img">
 				  </div>
 				  <div class="flip-card-back">
-					<p>James Wan</p> 
+					<p style="font-family:'Caveat'">James Wan</p> 
 					<p>Director</p> 
 					<p>Born in 1977</p>
 				  </div>
@@ -210,22 +228,15 @@
 	  </div> -->
 
 		<hr>
-		<p>A Chinese director born in Malaysia and raised in Australia. In his early years at university in Melbourne, 
+		<p class="text-justify">A Chinese director born in Malaysia and raised in Australia. In his early years at university in Melbourne, 
 			he majored in Chinese ethnic division. The knowledge of oriental exotic culture also has a great influence on James Wing's directing style, 
 			and the more important factor in his unique taste for plasma films such as "Saw" and "Dead Silence" is his Shocked by the death of his father at the age of 14.</p>
 			
 			
 			<br>
-			<div class="img-container">
-				
-				<img src="images/wan1.png" alt="James Wan"  class="grow img-fluid">
-				<img src="images/wan2.png" alt="James Wan" class="grow img-fluid">
-				<img src="images/wan3.png" alt="James Wan"  class="grow img-fluid">
-				<img src="images/wan4.png" alt="James Wan"  class="grow img-fluid">
-			</div>
-			<br>
+			
 		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
-		<p>Speaking of Wan, we have to mention his golden partner Ray Warner. Geniuses are not created overnight. As early as in college, the two had ambitions 
+		<p class="text-justify">Speaking of Wan, we have to mention his golden partner Ray Warner. Geniuses are not created overnight. As early as in college, the two had ambitions 
 			to write a horror movie that could be branded with the times. Like most old horror movie fans, the Texas Chainsaw Massacre, 
 			The Silence of the Lambs and other classic horrors The film gave them a lot of inspiration. Finally, in 2004, 
 			Wan Werner co-wrote the original script of Chainsaw. After the two of them managed to prepare the funds, 
@@ -234,21 +245,34 @@
 			with influence of the times was born. Although Wan secluded himself and worked behind the scenes after 3 episodes, he still 
 			could not hide his reputation as the "Father of Chainsaw".</p>
 			<br>
+		
+		</div>
 			
+
+			
+			<div class="caption">
+				<h2 >Portraits</h2>
+			</div>
+			<button type="button" class="btn-default btn btn-primary" data-toggle="collapse" 
+		data-target=".img-hide"  >
+			Hide
+		</button>
+			<hr>
+			<div class="img-hide">
 			<div class="img-container">
 				
-				
-				
+				<img src="images/wan1.png" alt="James Wan"  class="grow img-fluid">
+				<img src="images/wan2.png" alt="James Wan" class="grow img-fluid">
+				<img src="images/wan3.png" alt="James Wan"  class="grow img-fluid">
+				<img src="images/wan4.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan5.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan6.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan7.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan8.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan9.png" alt="James Wan"  class="grow img-fluid">
 				<img src="images/wan10.png" alt="James Wan"  class="grow img-fluid">
-
-			
 			</div>
-			<br>
+			</div>
 			
 			<div class="caption">
 				<h2 >Movie List</h2>
@@ -349,10 +373,29 @@
 
 	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>
-		<p><i class="fa-solid fa-signature"></i> Yang Tianyi
+		<!-- <p><i class="fa-solid fa-signature"></i> Yang Tianyi
 		 <i class="fa-solid fa-envelope"></i> jackyty@umich.edu    <i class="fa-solid fa-copyright"></i> 2022
-		<i class="material-icons" style="font-size:24px;color:darkred;">favorite</i></p>
-		
+		<i class="material-icons" style="font-size:24px;color:darkred;">favorite</i></p> -->
+		<br>
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-8 col-sm-6 col-xs-12" >
+				<p class="copyright-text" >Copyright &copy; 2017 All Rights Reserved by  <i class="fa-solid fa-envelope"></i><a href="mailto: jackyty@umich.com">jackyty@umich.edu </a> 
+				</p>
+			  </div>
+	
+			  <div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+				  
+				  <li><a class="github" href="https://github.com/ytyi" aria-label="third link"><i class="fa fa-github"></i></a></li>
+				  <li><a class="linkedin" href="https://www.linkedin.com/in/tianyi-yang-1900471b2/" aria-label="fourth link"><i class="fa fa-linkedin"></i></a></li>   
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <br>
 	</footer>
+	
 </body>
+
 </html>

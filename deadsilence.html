@@ -20,6 +20,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a62d08b717.js" crossorigin="anonymous"></script>
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -44,38 +47,48 @@
 	  </a>
 	<header>
 	
-		<nav class="navbar  navbar-inverse" role="navigation">
+		<nav class="navbar navbar-inverse navbar-expand-sm navbar-expand-lg  navbar-expand-md" role="navigation">
 			<div class="container-fluid"> 
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#example-navbar-collapse">
-					
-					<span class="icon-bar sr-only" >James Wan</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<!-- <a class="navbar-brand" href="#"><br>James Wan</br></a> -->
-			</div>
-		<div class="collapse navbar-collapse" id="example-navbar-collapse">
-		<ul class="nav nav-tabs nav-justified">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+							data-target="#example-navbar-collapse">
+						
+						<span class="icon-bar sr-only" >James Wan</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="navbar-header">
+						<a class="navbar-brand" href="#" aria-label="first link">
+							
+
+
+						</a>
+					</div>
+				</div>
+			<div class="collapse navbar-collapse" id="example-navbar-collapse">
+			<ul class="nav nav-tabs nav-justified">
+
+			
 			
 			<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="index.html">
 				  Home <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu nav nav-pills nav-stacked">
+					<li><a href="index.html">Top</a></li>
 				  <li><a href="index.html#bio">Biography</a></li>
 				  <li><a href="index.html#movie_list">Movie List</a></li>
 				  <li><a href="index.html#contact_table">Contact Table</a></li>
 				 
 				</ul>
 			
-			<li class="active dropdown">
+			<li class="active  dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="deadsilence.html">
 					Dead Silence <span class="caret"></span>
 				</a>
 				<ul class="dropdown-menu nav nav-pills nav-stacked">
+					<li><a href="deadsilence.html">Top</a></li>
 					<li><a href="deadsilence.html#rate">Rate</a></li>
 					<li><a href="deadsilence.html#trailer">Trailer</a></li>
 					<li><a href="deadsilence.html#synopsis">Synpsis</a></li>
@@ -90,6 +103,7 @@
 						Insidious Series <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu nav nav-pills nav-stacked">
+						<li><a href="insidious.html">Top</a></li>
 						<li><a href="insidious.html#rate">Rate</a></li>
 						<li><a href="insidious.htmll#trailer">Trailer</a></li>
 						<li><a href="insidious.html#synopsis">Synpsis</a></li>
@@ -104,6 +118,7 @@
 						Conjuring <span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu nav nav-pills nav-stacked">
+						<li><a href="conjuring.html">Top</a></li>
 						<li><a href="conjuring.html#rate">Rate</a></li>
 						<li><a href="conjuring.html#trailer">Trailer</a></li>
 						<li><a href="conjuring.html#synopsis">Synpsis</a></li>
@@ -119,6 +134,7 @@
 		</div>
 	</div>
 	</nav>
+	<br>
 		<h1>Dead Silence</h1>
 	</header>
 
@@ -133,7 +149,7 @@
 				<h2> Rate</h2>
 			</div>
 			<hr >
-			<p>7.8/10</p>
+			<p><i class="fa fa-imdb fa-2xl"></i> 7.8/10</p>
 			<div class="rate">
 				<input type="radio" id="star5" name="rate" value="5" />
 				<label for="star5" title="text">5 stars</label>
@@ -160,6 +176,7 @@
 			<div class="embed-responsive embed-responsive-16by9">
 				<video width="1000" height="500" controls>
 					<source class="embed-responsive-item"  src="video/ds.mp4"  type="video/mp4">
+					<track src="#" kind="captions" srclang="en" label="English">
 					video not supported
 				</video>
 
@@ -174,7 +191,7 @@
 			<div class="caption">
 			<h2>Synopsis</h2></div>
 				<hr>
-			<p>Nursery rhymes should be full of laughter and laughter, but there are so many nursery rhymes in the world that make people horrified. 
+			<p class="text-justify">Nursery rhymes should be full of laughter and laughter, but there are so many nursery rhymes in the world that make people horrified. 
 				There is such a scary nursery rhyme in the small town of Ravens Farr: Beware of the stare from Mary Shaw; she has no children, only dolls; 
 				if you see her, don't scream; or she will rip your mouth open Rip your tongue out. This town has always been under the curse of this nursery rhyme. <br> 
 				As long as there are dolls, someone will be killed, and the death will be like a tongue cut off.
@@ -186,13 +203,14 @@
 		<br>
 		<br>
 		
-		<button type="button" class="btn btn-primary" data-toggle="collapse" 
-		data-target="#stills" style="font-size: 20px; background-color: transparent; color:black" >
-			Hide
-		</button>
+		
 		<div class="caption">
 			<h2>Stills</h2>
 			</div>
+			<button type="button" class="btn btn-primary" data-toggle="collapse" 
+		data-target="#stills" style="font-size: 20px; background-color: transparent; color:black" >
+			Hide
+		</button>
 			
 			<hr>
 			<div class="stills" id="stills">
@@ -266,9 +284,24 @@
 
 	</main>
 	<footer>
-		<p><i class="fa-solid fa-signature"></i> Yang Tianyi
-		 <i class="fa-solid fa-envelope"></i> jackyty@umich.edu    <i class="fa-solid fa-copyright"></i> 2022
-		<i class="material-icons" style="font-size:24px;color:darkred;">favorite</i></p>
+		<br>
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-8 col-sm-6 col-xs-12" >
+				<p class="copyright-text" >Copyright &copy; 2017 All Rights Reserved by  <i class="fa-solid fa-envelope"></i><a href="mailto: jackyty@umich.com">jackyty@umich.edu </a> 
+				</p>
+			  </div>
+	
+			  <div class="col-md-4 col-sm-6 col-xs-12">
+				<ul class="social-icons">
+				  
+					<li><a class="github" href="https://github.com/ytyi" aria-label="second link"><i class="fa fa-github"></i></a></li>
+					<li><a class="linkedin" href="https://www.linkedin.com/in/tianyi-yang-1900471b2/" aria-label="second link"><i class="fa fa-linkedin"></i></a></li>   
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		  <br>
 		
 	</footer>
 	

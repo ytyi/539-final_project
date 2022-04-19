@@ -5,19 +5,43 @@ body{
 	padding:1%;
 	font-size:150%;
 	background-image: url(../images/greybg.jpg);
+	/* background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
 	
 }
 
+
+
 /*Make the h1 heading bigger with a bold font*/
 h1{
-	font-size: 2em; 
+	border: 20px;
+	margin:20px;
+	font-size: 15vw; 
 	font-weight: bold;
 	text-align: center;
 	animation-name: title;
   	animation-duration: 1.5s;
-	color: darkgrey;
+	color: whitesmoke;
 	font-family: 'Shadows Into Light';
+	background-image: url(../images/Jigsaw.webp);
+	opacity: 0.6;
+	background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; 
 }
+
+.btn-default {
+	background: #000;
+	color: #fff;
+	font-size: 20px;
+ }
+.btn-default:hover {
+	background: #fff;
+	color: #000;
+ }
 
 
 .active{
@@ -48,6 +72,166 @@ h1{
 	grid-column: 3/4;
 } */
 
+.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+
+.site-footer
+{
+  padding-bottom:0
+}
+
+.copyright-text
+{
+  margin:0;
+  text-align:left
+}
+
+
+
+  
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.github:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+
+  
 .grid-img-container{
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
@@ -164,6 +348,7 @@ p, h1, h2 {
 
 p{
 	font-size:5vw;
+	font-family: serif;
 }
 
 /*Add borders around the main components and some
@@ -522,6 +707,11 @@ input[type=text], select, textarea {
 	  grid-row: 6;
 	}
 
+	.site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+
 
 
 
@@ -531,11 +721,11 @@ input[type=text], select, textarea {
 
 	h2{
 
-		font-size: 8vw;
+		font-size: 6vw;
 	}
 
 	p{
-		font-size: 1.5vw;
+		font-size: 1.4vw;
 	}
 
 	.img-container img{
@@ -601,6 +791,7 @@ input[type=text], select, textarea {
 
 
 
+
 }
 
   @media (prefers-reduced-motion: reduce) {
@@ -618,5 +809,29 @@ input[type=text], select, textarea {
     filter: none;
 
   }
+  *, ::before, ::after {
+    animation: none;
+	transform: none;
+	transition: none;
+  }
+
+  .caption::before,   .caption:hover::before{
+	animation: none;
+	transform: none;
+	transition: none;
+  }
+
+  .flip-card:hover   .flip-card-inner, 
+  .flip-card:focus-within   .flip-card-inner, 
+  .flip-card:active   .flip-card-inner, 
+  .flip-card:focus   .flip-card-inner{
+	transform: none;
+  }
+
+  input[type=text],select,textarea {
+	transition: none;
+  }
+
+  
   }
 
